@@ -1,0 +1,279 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+* {
+  background-repeat: no-repeat;
+}
+
+body {
+    background:grey;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+@media screen and (min-width: 800px) {
+}
+
+h2 {
+    font-size: 24px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+body {
+    background-image:url(../images/background.jpg);
+    background-size: cover;
+    background-position: top left;
+    height: 100%;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+.header {
+    background: rgba(0,0,0,.65);
+    width: 100%;
+    position: fixed;
+    height: 100px;
+    z-index: 1000;
+}
+
+.nav>li>a {
+    float: right;
+    color: white;
+    font-size: 18px;
+    margin-top: 38px;
+    margin-left: 20px;
+    letter-spacing: 1.25px;
+    padding: 0;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    color: white;
+    background: none;
+    padding-bottom: 7px;
+    border-bottom: 5px solid white;
+    text-decoration: none;
+}
+
+.picprofile {
+    display: inline-block;
+    position: fixed;
+    top: 20px;
+    left: 35px;
+}
+
+.picprofile img {width: 60px;
+    float:left;
+    border-radius:50%;}
+
+.sidebar {
+    background: rgba(0,0,0,.8);
+    margin-top: 160px;
+    left: 20px;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+}
+
+.tasklist, .tripfeed {
+    line-height: 1.5em;
+    padding: 15px;
+    font-weight: 400;
+}
+
+.tasklist > label {color:white;}
+
+input[type=checkbox] {display:none;}
+
+/*.checkbox {background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcmsIPuxgaE2kWhQL942H9oqwN7EjAdd0WhwkKwC0yLhMj0dIXPw) no-repeat;
+            background-size:5px 5px;
+            height:20px;
+            width:20px;
+            border:3px white solid;
+            display:inline;
+            }
+
+.checkbox{background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcmsIPuxgaE2kWhQL942H9oqwN7EjAdd0WhwkKwC0yLhMj0dIXPw) no-repeat;
+            background-size:20px 20px;
+
+            }*/
+/*
+.checkbox-label:before {
+    content: "";
+    background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcmsIPuxgaE2kWhQL942H9oqwN7EjAdd0WhwkKwC0yLhMj0dIXPw) no-repeat;
+    background-size:20px 20px;
+    width: 20px;
+    height: 20px;
+}*/
+
+.checkbox-label {
+    /*background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcmsIPuxgaE2kWhQL942H9oqwN7EjAdd0WhwkKwC0yLhMj0dIXPw) no-repeat;*/
+    padding-left: 40px;
+    /*background-size:20px 20px;*/
+}
+
+.sidebar label {
+    display: block;
+}
+
+input[type=checkbox]:checked + label {
+  background: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcmsIPuxgaE2kWhQL942H9oqwN7EjAdd0WhwkKwC0yLhMj0dIXPw) no-repeat;
+  background-size:20px 20px;
+}
+
+
+p {
+    padding:5px;
+
+
+    text-align:center;}
+
+h2 {font-size: 115%;}
+
+
+
+.trips{
+    width:100%;
+    margin-top: 160px;
+    background: rgba(0,0,0,.75);
+    height: auto;
+    padding:45px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+.trips img {
+    height: 4px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.yourtrips {
+            padding: 10px 10px;
+            text-align:center;
+            font-family: 'Quattrocento Sans', sans-serif;
+            letter-spacing: 1.5px;
+            font-size: 36px;
+            text-transform: uppercase;
+            color: white;
+            font-weight:700;
+            margin-bottom: 20px;
+            }
+
+.task1 {background-color:none;}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.vegas a, .sf a, .chicago a, .ny a {
+    height: 470px;
+    width: 179px;
+    display: inline-block;
+    float: left;
+    margin: 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+
+.vegas a {
+    background: url(../images/vegas.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.vegas a:hover {
+    background: url(../images/vegas-hover.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.sf a {
+    background: url(../images/sanfran.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.sf a:hover {
+    background: url(../images/sanfranhover.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.chicago a {
+    background: url(../images/chicago.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.chicago a:hover {
+    background: url(../images/chicagohover.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.ny a {
+    background: url(../images/newyork.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.ny a:hover {
+    background: url(../images/nyhover.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.placepics a, .placepics a:hover {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.75em;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 47px;
+}
+
+.sf a, .sf a:hover {
+    padding-top: 36px;
+    line-height: 90%;
+}
